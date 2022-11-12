@@ -77,32 +77,51 @@ class SignIn extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Container(
-                    padding: EdgeInsets.all(20),
+                    padding: EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       border: Border.all(),
                       borderRadius: BorderRadius.circular(10),
                       color: Colors.deepPurple[100],
                     ),
-                    child: Text("G"),
+                    child: SizedBox(
+                        height: 50,
+                        width: 50,
+                        child: Image.asset("image/google.png")),
                   ),
                   Container(
-                    padding: EdgeInsets.all(20),
+                    padding: EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       border: Border.all(),
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    child: Text("A"),
+                    child: SizedBox(
+                        height: 50,
+                        width: 50,
+                        child: Image.asset("image/apple.png")),
                   ),
                   Container(
-                    padding: EdgeInsets.all(20),
+                    padding: EdgeInsets.all(10),
                     decoration: BoxDecoration(
                       border: Border.all(),
                       borderRadius: BorderRadius.circular(10),
                     ),
-                    child: Text("F"),
+                    child: SizedBox(
+                        height: 50,
+                        width: 50,
+                        child: Image.asset("image/facebook.png")),
                   ),
                 ],
-              )
+              ),
+              SizedBox(
+                height: 10,
+              ),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Not a member? "),
+                  Text("Register now"),
+                ],
+              ),
             ],
           ),
         ),
