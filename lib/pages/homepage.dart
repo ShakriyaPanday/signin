@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:signin/utlis/sigin.dart';
+import 'package:signin/utlis/signin.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.deepPurple[50],
+      backgroundColor: Colors.deepPurple[100],
       body: SignIn(),
     );
   }
