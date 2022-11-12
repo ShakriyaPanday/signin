@@ -81,8 +81,8 @@ class SignIn extends StatelessWidget {
                     Text(
                       "Recovery Password",
                       style: GoogleFonts.lato(
-                        letterSpacing: 1.5,
-                      ),
+                          letterSpacing: 1.5,
+                          decoration: TextDecoration.underline),
                     )
                   ],
                 ),
@@ -94,8 +94,17 @@ class SignIn extends StatelessWidget {
                   width: double.infinity,
                   height: 60,
                   decoration: BoxDecoration(
-                      color: Colors.deepOrange[400],
-                      borderRadius: BorderRadius.circular(10)),
+                    color: Colors.deepOrange[400],
+                    borderRadius: BorderRadius.circular(10),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.deepOrange[400]!.withOpacity(0.5),
+                        spreadRadius: 5,
+                        blurRadius: 10,
+                        offset: Offset(4, 8), // changes position of shadow
+                      ),
+                    ],
+                  ),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
